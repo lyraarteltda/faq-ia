@@ -84,7 +84,7 @@ const App = (function () {
     if (active.service === 'openrouter') {
       endpoint = 'https://openrouter.ai/api/v1/chat/completions';
       headers['HTTP-Referer'] = location.origin;
-      headers['X-Title'] = 'FAQ IA — Maestros da IA';
+      headers['X-Title'] = 'FAQ IA - Maestros da IA';
       body = { model: model, temperature: 0.55, messages: [
         { role: 'system', content: prompt.sys }, { role: 'user', content: prompt.user } ] };
     } else { // openai nativo
